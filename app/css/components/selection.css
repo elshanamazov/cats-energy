@@ -1,0 +1,29 @@
+.selection {
+  padding-top: 44px;
+  padding-bottom: 72px;
+}
+.selection__title {
+  text-align: left;
+  color: var(--color-black-main);
+  margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .selection__title {
+    margin-bottom: 54px;
+  }
+}
+.selection__desc {
+  line-height: 1.2;
+  max-width: 226px;
+  text-align: left;
+  color: var(--color-black-main);
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .selection__desc {
+    max-width: 323px;
+    line-height: 1.5;
+    margin-bottom: 66px;
+  }
+}
+/*# sourceMappingURL=selection.css.map */

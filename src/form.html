@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  @include('partials/head.html')
+
+  <body>
+    <div class="wrapper">
+      <!-- подключаем шапку -->
+      @include('partials/header-inner.html')
+      <main class="page">
+        <section class="selection">
+          <div class="container">
+            <h2 class="selection__title main-title">Подбор программы</h2>
+            <p class="selection__desc desc">
+              Заполните анкету, и мы подберем программу питания для вашего кот
+            </p>
+            <form class="form">
+              <fieldset class="fieldset fieldset--info">
+                <div class="radio">
+                  <label class="radio__label" for="name">Имя*:</label>
+                  <input
+                    id="name"
+                    class="radio__name"
+                    placeholder="Барсик"
+                    required
+                    type="text"
+                  />
+                </div>
+
+                <div class="radio">
+                  <label class="radio__label" for="weight">Вес (кг):*</label>
+                  <input
+                    id="weight"
+                    class="radio__name"
+                    placeholder="7"
+                    required
+                    type="number"
+                  />
+                </div>
+
+                <div class="radio radio">
+                  <label class="radio__label" for="age">Возраст (лет):</label>
+                  <input
+                    id="age"
+                    class="radio__name"
+                    placeholder="7"
+                    required
+                    type="number"
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset fieldset--choice">
+                <div class="checkbox-wrap">
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__real" type="checkbox" />
+                      <span class="checkbox__fake"></span>
+                      Похудение
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__real" type="checkbox" />
+                      <span class="checkbox__fake"></span>
+                      Набор массы
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__real" type="checkbox" />
+                      <span class="checkbox__fake"></span>
+                      Не знаю (Нужен ваш совет)
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="fieldset fieldset--contacts">
+                <legend class="fieldset__title second-title">
+                  Контактные данные (владельца кота)
+                </legend>
+                <div class="radio">
+                  <label class="radio__label" for="mail">E-mail:*</label>
+                  <input
+                    id="mail"
+                    class="radio__name"
+                    placeholder="kuklachev@gmail.com"
+                    required
+                    type="email"
+                  />
+                  <svg class="radio__icon">
+                    <use xlink:href="img/icons/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+
+                <div class="radio">
+                  <label class="radio__label" for="phone">Телефон:*</label>
+                  <input
+                    id="phone"
+                    class="radio__name"
+                    placeholder="8 (960) 900-60-90"
+                    required
+                    type="tel"
+                  />
+                  <svg class="radio__icon">
+                    <use xlink:href="img/icons/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset fieldset--comments">
+                <legend class="fieldset__title second-title">
+                  Комментарий
+                </legend>
+                <textarea
+                  class="textarea"
+                  name="comment"
+                  placeholder="Расскажите обо всех повадках кота"
+                ></textarea>
+              </fieldset>
+
+              <fieldset class="fieldset fieldset--additional">
+                <legend class="fieldset__title title">Дополнительно</legend>
+                <div class="fieldset__wrap">
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__real" checked type="checkbox" />
+                      <span
+                        class="checkbox__fake checkbox__fake--square"
+                      ></span>
+                      сахарозаменитель
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__real" type="checkbox" />
+                      <span
+                        class="checkbox__fake checkbox__fake--square"
+                      ></span>
+                      питьевая вода
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__real" type="checkbox" />
+                      <span
+                        class="checkbox__fake checkbox__fake--square"
+                      ></span>
+                      молоко
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label class="checkbox__label">
+                      <input class="checkbox__real" type="checkbox" />
+                      <span
+                        class="checkbox__fake checkbox__fake--square"
+                      ></span>
+                      витамины
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="form__submit">
+                <button class="btn form__btn" type="submit">
+                  отправить заявку
+                </button>
+                <p class="required second-desc">* — Обязательные поля</p>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- подключаем подвал -->
+      @include('partials/footer-inner.html')
+    </div>
+  </body>
+</html>

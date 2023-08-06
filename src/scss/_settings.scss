@@ -6,19 +6,16 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-html {
-  height: 100%;
-  font-family: var(--font-family, sans-serif);
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
   margin: 0;
-  min-width: 320px;
-  min-height: 100%;
-  font-size: 16px;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: var(--basic-family);
+  line-height: 1.5;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 img {
@@ -27,19 +24,20 @@ img {
   object-fit: cover;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }
 
-.container {
-  max-width: ($containerWidth + $containerPadding) + px;
+.wrapper {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 $containerSidePadding + px;
-}
-
-.site-container {
-  overflow: hidden; // if you use position: sticky on the site, remove this setting
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-reset {

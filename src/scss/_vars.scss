@@ -1,22 +1,25 @@
-@use "sass:math";
-$containerWidth: 1440;
-$containerPadding: 80;
-$containerSidePadding: math.div($containerPadding, 2);
-$breakpoint1450: 1449.98 + px;
-$breakpoint992: 991.98 + px;
-$breakpoint768: 767.98 + px;
-$breakpoint480: 479.98 + px;
+:root {
+  // colors
+  --color-black-main: #000000;
+  --color-white-main: #ffffff;
+  --color-white-opacity: rgba(255, 255, 255, 0.3);
+  --color-bg-green: #68b738;
+  --color-bg-green-hover: #5eaa2f;
+  --color-bg-grey-basic: #e6e6e6;
+  --color-bg-grey-second: #f2f2f2;
+  --color-bg-grey-third: #d9d9d9;
+  --color-dark-grey: #444444;
+  --color-dark-grey-special: #222222;
+  --color-dark-grey-opacity: rgba(68, 68, 68, 0.3);
+  --color-bg-light-grey: #eaeaea;
+  --color-bg-hover-grey: #ebebeb;
+  --color-border-grey: #cdcdcd;
+  --color-border-grey-dotted: #b2b2b2;
+  --color-border-input: #e7e7e7;
+  --color-border-error: #ff8282;
+  --color-radio-hover: #bababa;
 
-// Colors
-
-$darkColor: #131418;
-$lightColor: #ffffff;
-
-// Burger Menu
-
-$burgerBreakpoint: $breakpoint992;
-$burgerColor: #131418;
-$burgerActiveColor: #fefefe;
-
-// Fonts
-$fontMain: "Sofia Pro", sans-serif;
+  // fonts
+  --basic-family: "Oswald", sans-serif;
+  --text-family: "Arial", "Helvetica", sans-serif;
+}

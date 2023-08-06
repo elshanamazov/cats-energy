@@ -1,0 +1,111 @@
+.steps {
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: 768px) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 71px;
+    padding-bottom: 26px;
+  }
+
+  &__wrap {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr;
+      row-gap: 37px;
+      column-gap: 150px;
+      counter-reset: num;
+    }
+
+    @media (min-width: 1440px) {
+      grid-template: auto / 1fr 1fr 1fr 1fr;
+      column-gap: 94px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 250px;
+      position: relative;
+      min-height: 280px;
+      padding-top: 40px;
+      margin-bottom: 0;
+
+      &::after {
+        counter-increment: num;
+        content: counter(num);
+        position: absolute;
+        font-family: var(--basic-family);
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 1.5;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        z-index: -1;
+        color: var(--color-bg-grey-second);
+      }
+    }
+  }
+
+  &__icon {
+    padding: 16px;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: var(--color-bg-green) url(../img/icons/icon_leaf.svg) no-repeat
+      center center;
+
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+      padding: 26px;
+      margin-right: 0;
+      margin-bottom: 31px;
+    }
+
+    &--tub {
+      background: var(--color-bg-green) url(../img/icons/icon_tub.svg) no-repeat
+        center center;
+    }
+
+    &--eat {
+      background: var(--color-bg-green) url(../img/icons/icon_eat.svg) no-repeat
+        center center;
+    }
+
+    &--alarm {
+      background: var(--color-bg-green) url(../img/icons/icon_alarm.svg)
+        no-repeat center center;
+    }
+  }
+
+  &__desc {
+    color: var(--color-dark-grey);
+    margin-bottom: 0;
+    max-width: 198px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+      min-width: 210px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}

@@ -5,4 +5,13 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/header";
+@import "./components/common.scss";
+@import "./components/header.scss";
+@import "./components/plans.scss";
+@import "./components/steps.scss";
+@import "./components/example.scss";
+@import "./components/footer.scss";
+@import "./components/products.scss";
+@import "./components/addition.scss";
+@import "./components/selection.scss";
+@import "./components/form.scss";
