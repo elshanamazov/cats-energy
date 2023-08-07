@@ -366,7 +366,7 @@
   width: 24px;
   height: 24px;
   border-radius: 0;
-  background: url(../img/icons/tick.svg) no-repeat;
+  background: url(../img/svg/tick.svg) no-repeat;
 }
 
 .textarea {

@@ -51,7 +51,7 @@
         font-family: var(--basic-family);
         font-weight: 400;
         font-size: 280px;
-        line-height: 1.5;
+        line-height: 1;
         right: 0;
         top: 0;
         bottom: 0;
@@ -67,7 +67,7 @@
     width: 60px;
     height: 60px;
     margin-right: 20px;
-    background: var(--color-bg-green) url(../img/icons/icon_leaf.svg) no-repeat
+    background: var(--color-bg-green) url(../img/svg/icon_leaf.svg) no-repeat
       center center;
 
     @media (min-width: 768px) {
@@ -79,18 +79,18 @@
     }
 
     &--tub {
-      background: var(--color-bg-green) url(../img/icons/icon_tub.svg) no-repeat
+      background: var(--color-bg-green) url(../img/svg/icon_tub.svg) no-repeat
         center center;
     }
 
     &--eat {
-      background: var(--color-bg-green) url(../img/icons/icon_eat.svg) no-repeat
+      background: var(--color-bg-green) url(../img/svg/icon_eat.svg) no-repeat
         center center;
     }
 
     &--alarm {
-      background: var(--color-bg-green) url(../img/icons/icon_alarm.svg)
-        no-repeat center center;
+      background: var(--color-bg-green) url(../img/svg/icon_alarm.svg) no-repeat
+        center center;
     }
   }
 

@@ -59,11 +59,10 @@
     max-width: 139px;
 
     &-street {
-      line-height: 1.5;
+      line-height: 1.2;
 
       @media (min-width: 768px) {
         font-size: 16px;
-        line-height: 1.5;
         display: inline-block;
         margin-bottom: 17px;
       }

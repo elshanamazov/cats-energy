@@ -63,7 +63,7 @@
       position: absolute;
       width: 36px;
       height: 50px;
-      background: url(../img/icons/cat-slim.svg) no-repeat center center/contain;
+      background: url(../img/svg/cat-slim.svg) no-repeat center center/contain;
       left: 5px;
       top: -10px;
       bottom: 0;
@@ -113,8 +113,7 @@
 
     &--pro {
       &::after {
-        background: url(../img/icons/cat-pro.svg) no-repeat center
-          center/contain;
+        background: url(../img/svg/cat-pro.svg) no-repeat center center/contain;
         height: 28px;
         width: 67px;
         left: -8px;
@@ -187,7 +186,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url(../img/icons/icon-arrow.svg) no-repeat;
+      background: url(../img/svg/icon-arrow.svg) no-repeat;
       width: 24px;
       height: 12px;
       right: 10px;
@@ -198,7 +197,7 @@
     }
 
     &:hover::after {
-      background: url(../img/icons/icon-arrow-hover.svg) no-repeat;
+      background: url(../img/svg/icon-arrow-hover.svg) no-repeat;
       width: 32px;
       right: 0;
     }

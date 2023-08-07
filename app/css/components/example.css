@@ -363,7 +363,7 @@
     border-radius: 50%;
     border: 1px solid var(--color-border-grey);
     background: var(--color-white-main);
-    background: url("../img/icons/slider-control.svg") no-repeat center center;
+    background: url("../img/svg/slider-control.svg") no-repeat center center;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
     cursor: -webkit-grab;
@@ -383,7 +383,7 @@
     border-radius: 50%;
     border: 1px solid var(--color-border-grey);
     background: var(--color-white-main);
-    background: url("../img/icons/slider-control.svg") no-repeat center center;
+    background: url("../img/svg/slider-control.svg") no-repeat center center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
     cursor: grab;
   }
