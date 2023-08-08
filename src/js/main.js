@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   (() => {
     const currentPath = window.location.pathname;
     currentPath.replace("cats-energy/", "");
+    currentPath.substring(1);
     console.log(currentPath);
     const navLinks = document.querySelectorAll(".nav__link");
 
