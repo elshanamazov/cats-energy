@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // active link
   (() => {
     const currentPath = window.location.pathname.substring(1);
+    console.log(currentPath);
     const navLinks = document.querySelectorAll(".nav__link");
 
     navLinks.forEach((link) => {
