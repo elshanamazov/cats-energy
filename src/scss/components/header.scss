@@ -129,11 +129,7 @@
       }
 
       &._active {
-        border-bottom: 2px solid var(--color-bg-green);
-
-        @media (min-width: 1440px) {
-          border-bottom: 2px solid var(--color-white-main);
-        }
+        border-bottom: 2px solid var(--color-border-grey);
       }
     }
 

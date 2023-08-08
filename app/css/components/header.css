@@ -155,12 +155,7 @@
     opacity: 0.3;
   }
   .nav__link._active {
-    border-bottom: 2px solid var(--color-bg-green);
-  }
-}
-@media (min-width: 768px) and (min-width: 1440px) {
-  .nav__link._active {
-    border-bottom: 2px solid var(--color-white-main);
+    border-bottom: 2px solid var(--color-border-grey);
   }
 }
 @media (min-width: 1440px) {

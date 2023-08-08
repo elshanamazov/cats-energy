@@ -29,4 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   })();
+
+  // active link
+  (() => {
+    const currentPath = window.location.pathname.substring(1);
+    const navLinks = document.querySelectorAll(".nav__link");
+
+    navLinks.forEach((link) => {
+      if (link.getAttribute("href") === currentPath) {
+        link.classList.add("_active");
+      }
+    });
+  })();
 });
