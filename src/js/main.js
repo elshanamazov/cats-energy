@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // active link
   (() => {
     const currentPath = window.location.pathname.replace("cats-energy/", "");
-    console.log(currentPath);
     const navLinks = document.querySelectorAll(".nav__link");
 
     navLinks.forEach((link) => {
-      if (link.getAttribute("href") === currentPath) {
+      const href = link.getAttribute("href");
+      if (href && `/${href}` === currentPath) {
         link.classList.add("_active");
       }
     });
